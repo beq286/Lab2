@@ -538,28 +538,10 @@ Everything up-to-date
 
 
 ```sh
-$ gcc hello_world.cpp -o hello_world
+$ gcc hello_world.cpp -o hello_world -lstdc++
 ```
 
-
-
-
-
-
 ```sh
-/usr/bin/ld: /tmp/cc9EMFPm.o: warning: relocation against `_ZSt4cout' in read-only section `.text'
-/usr/bin/ld: /tmp/cc9EMFPm.o: в функции «main»:
-hello_world.cpp:(.text+0x24): неопределённая ссылка на «std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string()»
-/usr/bin/ld: hello_world.cpp:(.text+0x35): неопределённая ссылка на «std::cout»
-/usr/bin/ld: hello_world.cpp:(.text+0x3d): неопределённая ссылка на «std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*)»
-/usr/bin/ld: hello_world.cpp:(.text+0x4b): неопределённая ссылка на «std::cin»
-/usr/bin/ld: hello_world.cpp:(.text+0x53): неопределённая ссылка на «std::basic_istream<char, std::char_traits<char> >& std::operator>><char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&)»
-/usr/bin/ld: hello_world.cpp:(.text+0x64): неопределённая ссылка на «std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()»
-/usr/bin/ld: hello_world.cpp:(.text+0x8a): неопределённая ссылка на «std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()»
-/usr/bin/ld: /tmp/cc9EMFPm.o: в функции «__static_initialization_and_destruction_0(int, int)»:
-hello_world.cpp:(.text+0xd0): неопределённая ссылка на «std::ios_base::Init::Init()»
-/usr/bin/ld: hello_world.cpp:(.text+0xeb): неопределённая ссылка на «std::ios_base::Init::~Init()»
-/usr/bin/ld: /tmp/cc9EMFPm.o:(.data.rel.local.DW.ref.__gxx_personality_v0[DW.ref.__gxx_personality_v0]+0x0): неопределённая ссылка на «__gxx_personality_v0»
-/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
-collect2: error: ld returned 1 exit status
+Enter your name: beq
+Hello world from beq
 ```
