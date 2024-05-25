@@ -539,6 +539,7 @@ Everything up-to-date
 
 ```sh
 $ gcc hello_world.cpp -o hello_world -lstdc++
+./hello_world
 ```
 
 ```sh
